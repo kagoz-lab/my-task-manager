@@ -15,9 +15,9 @@ session = Session()
 # Seed data
 def seed_data():
     tasks = [
-        Task(title="Task 1", description="Description for Task 1", priority="high", due_date=datetime.strptime("2023-12-31", "%Y-%m-%d").date()),
-        Task(title="Task 2", description="Description for Task 2", priority="medium", due_date=datetime.strptime("2023-11-30", "%Y-%m-%d").date()),
-        Task(title="Task 3", description="Description for Task 3", priority="low", due_date=datetime.strptime("2023-10-31", "%Y-%m-%d").date()),
+        Task(title="Go to the barber", description="Get a haircut and beard trim", priority="high", due_date=datetime.strptime("2023-12-01", "%Y-%m-%d").date()),
+        Task(title="Buy groceries", description="Purchase fruits, vegetables, and snacks", priority="medium", due_date=datetime.strptime("2023-11-15", "%Y-%m-%d").date()),
+        Task(title="Finish the project report", description="Complete the final report for the project", priority="low", due_date=datetime.strptime("2023-11-30", "%Y-%m-%d").date()),
     ]
     
     session.add_all(tasks)  # Add all tasks to the session
